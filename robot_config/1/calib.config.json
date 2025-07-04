@@ -1,0 +1,17 @@
+{
+    "Index_MCP":1,
+    "Index_PIP_DIP":0,
+    "Middle_MCP":1,
+    "Middle_PIP_DIP":0,
+    "Ring_MCP":1,
+    "Ring_PIP_DIP":0,
+    "Pinky_MCP":1,
+    "Pinky_PIP_DIP":1,
+    "Thumb_CMC1":1,
+    "Thumb_CMC2":1,
+    "Thumb_MCP":1,
+    "Thumb_IP":1,
+    "Finger_MCP_Spread":0,
+    "Wrist_Thumb_Side":1,
+    "Wrist_Pinky_Side":1
+}

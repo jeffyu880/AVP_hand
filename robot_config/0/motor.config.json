@@ -1,0 +1,227 @@
+{
+    "dynamixel0": {
+        "ID": 0,
+        "motion_name": "Index_MCP",
+        "zero_angle": -142,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "ccw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.3,
+        "default_speed_deg": 420
+    },
+    "dynamixel1": {
+        "ID": 1,
+        "motion_name": "Middle_MCP",
+        "zero_angle": -143,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "ccw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.65,
+        "default_speed_deg": 90
+    },
+    "dynamixel2": {
+        "ID": 2,
+        "motion_name": "Ring_MCP",
+        "zero_angle": -145,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "ccw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.65,
+        "default_speed_deg": 90
+    },
+    "dynamixel3": {
+        "ID": 3,
+        "motion_name": "Pinky_MCP",
+        "zero_angle": -144,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "ccw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.65,
+        "default_speed_deg": 90
+    },
+    "dynamixel4": {
+        "ID": 4,
+        "motion_name": "Thumb_CMC1",
+        "zero_angle": -142,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "ccw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.65,
+        "default_speed_deg": 90
+    },
+    "dynamixel5": {
+        "ID": 5,
+        "motion_name": "Thumb_CMC2",
+        "zero_angle": -141,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "ccw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.65,
+        "default_speed_deg": 90
+    },
+    "dynamixel6": {
+        "ID": 6,
+        "motion_name": "Index_PIP_DIP",
+        "zero_angle": 145,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "cw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.96,
+        "default_speed_deg": 90
+    },
+    "dynamixel7": {
+        "ID": 7,
+        "motion_name": "Middle_PIP_DIP",
+        "zero_angle": 148,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "cw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.65,
+        "default_speed_deg": 90
+    },
+    "dynamixel8": {
+        "ID": 8,
+        "motion_name": "Ring_PIP_DIP",
+        "zero_angle": 150,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "cw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.65,
+        "default_speed_deg": 90
+    },
+    "dynamixel9": {
+        "ID": 9,
+        "motion_name": "Pinky_PIP_DIP",
+        "zero_angle": 140,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "cw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.65,
+        "default_speed_deg": 90
+    },
+    "dynamixel10": {
+        "ID": 10,
+        "motion_name": "Thumb_MCP",
+        "zero_angle": 152,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "cw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.65,
+        "default_speed_deg": 90
+    },
+    "dynamixel11": {
+        "ID": 11,
+        "motion_name": "Thumb_IP",
+        "zero_angle": 141,
+        "angle_limit": [
+            0,
+            200
+        ],
+        "direction": "cw",
+        "radius": 7.5,
+        "location": "block",
+        "default_current_mA": 800,
+        "decay": 0.65,
+        "default_speed_deg": 90
+    },
+    "dynamixel12": {
+        "ID": 12,
+        "motion_name": "Finger_MCP_Spread",
+        "zero_angle": -1,
+        "angle_limit": [
+            0,
+            45
+        ],
+        "direction": "cw",
+        "radius": 7.5,
+        "location": "hand",
+        "default_current_mA": 800,
+        "decay": 0.65,
+        "default_speed_deg": 90
+    },
+    "dynamixel13": {
+        "ID": 13,
+        "motion_name": "Wrist_Thumb_Side",
+        "zero_angle": -5,
+        "angle_limit": [
+            -120,
+            120
+        ],
+        "direction": "ccw",
+        "radius": 7.5,
+        "location": "wrist",
+        "default_current_mA": 800,
+        "decay": 0.6,
+        "default_speed_deg": 90
+    },
+    "dynamixel14": {
+        "ID": 14,
+        "motion_name": "Wrist_Pinky_Side",
+        "zero_angle": 4,
+        "angle_limit": [
+            -120,
+            120
+        ],
+        "direction": "cw",
+        "radius": 7.5,
+        "location": "wrist",
+        "default_current_mA": 800,
+        "decay": 0.6,
+        "default_speed_deg": 90
+    }
+}

@@ -1,0 +1,240 @@
+{
+    "Index": {
+        "stiffness_ratio": {
+            "PIP": 1.2,
+            "DIP": 1
+        },
+        "radius": {
+            "MCP": 14
+        },
+        "joint_name": {
+            "MCP": "Index_MCP",
+            "flex": [
+                "Index_PIP",
+                "Index_DIP"
+            ]
+        }
+    },
+    "Middle": {
+        "stiffness_ratio": {
+            "PIP": 1.2,
+            "DIP": 1
+        },
+        "radius": {
+            "MCP": 14
+        },
+        "joint_name": {
+            "MCP": "Middle_MCP",
+            "flex": [
+                "Middle_PIP",
+                "Middle_DIP"
+            ]
+        }
+    },
+    "Ring": {
+        "stiffness_ratio": {
+            "PIP": 1.2,
+            "DIP": 1
+        },
+        "radius": {
+            "MCP": 14
+        },
+        "joint_name": {
+            "MCP": "Ring_MCP",
+            "flex": [
+                "Ring_PIP",
+                "Ring_DIP"
+            ]
+        }
+    },
+    "Pinky": {
+        "stiffness_ratio": {
+            "PIP": 1.2,
+            "DIP": 1
+        },
+        "radius": {
+            "MCP": 14
+        },
+        "joint_name": {
+            "MCP": "Pinky_MCP",
+            "flex": [
+                "Pinky_PIP",
+                "Pinky_DIP"
+            ]
+        }
+    },
+    "Thumb": {
+        "stiffness_ratio": {
+            "MCP": 1,
+            "IP": 1
+        },
+        "radius": {
+            "CMC1": 15,
+            "CMC2": 15
+        },
+        "joint_name": {
+            "CMC1": "Thumb_CMC1",
+            "CMC2": "Thumb_CMC2",
+            "MCP": "Thumb_MCP",
+            "IP": "Thumb_IP"
+        }
+    },
+    "Spread": {
+        "motion_ratio": {
+            "Index": 1,
+            "Ring": -1,
+            "Pinky": -1.5
+        },
+        "joint_name": [
+            "Index_MCP_Spread",
+            "Middle_MCP_Spread",
+            "Ring_MCP_Spread",
+            "Pinky_MCP_Spread"
+        ]
+    },
+    "Wrist": {
+        "spur_ratio": 0.8,
+        "bevel_ratio": 0.85714286,
+        "limits": {
+            "Pitch": [
+                -30.0,
+                50.0
+            ],
+            "Yaw": [
+                -40.0,
+                40.0
+            ]
+        }
+    },
+    "constants": {
+        "tendon_lever": 8,
+        "length_wo_tendon": 3,
+        "joint_length": 6
+    },
+    "motion": {
+        "decay": 0.9
+    },
+    "sensing": {
+        "spring": {
+            "order": {
+                "Thumb_CMC1": 0,
+                "Thumb_CMC2": 4,
+                "Index_MCP": 1,
+                "Middle_MCP": 3,
+                "Ring_MCP": 2,
+                "Pinky_MCP": 5
+            },
+            "reverse": 1,
+            "zero": {
+                "Thumb_CMC1": 585.4000000000001,
+                "Thumb_CMC2": 333.4000000000001,
+                "Index_MCP": 271.9000000000001,
+                "Middle_MCP": 374.5999999999999,
+                "Ring_MCP": 407.4000000000001,
+                "Pinky_MCP": 439.0
+            },
+            "comp_limit": {
+                "Thumb_CMC1": 49.0,
+                "Thumb_CMC2": 101.69999999999982,
+                "Index_MCP": 187.79999999999973,
+                "Middle_MCP": 7.5,
+                "Ring_MCP": 18.90000000000009,
+                "Pinky_MCP": 65.69999999999982
+            }
+        }
+    },
+    "sim params": {
+        "Index_MCP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Index_PIP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Index_DIP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Index_MCP_Spread": {
+            "dir": 1,
+            "offset": 10
+        },
+        "Middle_MCP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Middle_PIP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Middle_DIP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Middle_MCP_Spread": {
+            "dir": 1,
+            "offset": 0
+        },
+        "Ring_MCP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Ring_PIP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Ring_DIP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Ring_MCP_Spread": {
+            "dir": 1,
+            "offset": -10
+        },
+        "Pinky_MCP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Pinky_PIP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Pinky_DIP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Pinky_MCP_Spread": {
+            "dir": 1,
+            "offset": -15
+        },
+        "Thumb_CMC1": {
+            "dir": 1,
+            "offset": 0
+        },
+        "Thumb_CMC2": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Thumb_MCP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Thumb_IP": {
+            "dir": -1,
+            "offset": 0
+        },
+        "Wrist_Pitch": {
+            "dir": 1,
+            "offset": -10
+        },
+        "Wrist_Yaw": {
+            "dir": -1,
+            "offset": 0
+        },
+        "VSA": {
+            "dir": 1,
+            "offset": 0
+        }
+    }
+}
