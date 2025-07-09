@@ -160,6 +160,12 @@ class AVPTeleopWrist():
         current_hand_trans = hand_base[:3]
         current_hand_quat = self.hand_base_to_wirst(hand_base)
 
+        hand_transform = []
+        for i in range(3):
+            hand_transform.append(current_hand_trans[i])
+        for i in range(4):
+            hand_transform.append(current_hand_quat[i])
+
         diff = get_relative_quaternion(current_hand_quat, self.avp_wrist_q).as_euler("zyx", degrees = True) # diff of orientation between the current hand and the AVP wrist pose
         applied_pitch, applied_yaw = self.command_wrist(diff[0], diff[1])
         wrist_q, residual_q = self.get_wrist_arm_coord(R.from_quat(hand_base[3:]).as_matrix(), applied_pitch, applied_yaw)
@@ -197,5 +203,5 @@ class AVPTeleopWrist():
         if self.gp.button_data["L1"] == 1:
             return franka_demand, applied_pitch, applied_yaw,
         else:
-            return starting_franka_pose, self.current_pitch, self.current_yaw
+            return starting_franka_pose, self.current_pitch, self.current_yaw, hand_transform
     

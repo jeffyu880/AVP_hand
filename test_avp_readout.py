@@ -96,7 +96,7 @@ def main():
         avp_teleopWrist.adapt_right_wrist_receiver(current_pitch, current_yaw)
         avp_teleopWrist.avp_demand_receiver(wrist_pose_demand)
 
-        arm_demand, hand_wrist_pitch, hand_wrist_yaw = avp_teleopWrist.get_arm_wrist_command()
+        arm_demand, hand_wrist_pitch, hand_wrist_yaw, hand_transform = avp_teleopWrist.get_arm_wrist_command()
         
         print("arm_demand ",arm_demand)  # robot arm target position and orientation
         print("hand_wrist_pitch  hand_wrist_yaw ", hand_wrist_pitch, hand_wrist_yaw) # adapt hand joint demand for wrist motors
