@@ -27,6 +27,16 @@ class AVPTeleopWrist():
 
     def arm_pos_receiver(self, msg):
         self.current_franka_pose = msg
+
+    def gamepad_callback(self, gamepad_raw_msg):
+        # print("self.gp.button_data[L1] ", self.gp.button_data["L1"])
+        self.gp.convert_joy_msg_to_dictionary(gamepad_raw_msg)
+
+        if self.is_pressed == False and self.gp.button_data["L1"] == 1: # need to change this to a toggle button
+            self.reset_pose()
+            self.is_pressed = True
+        if self.gp.button_data["L1"] == 0: # need to change this to a toggle button
+            self.is_pressed = False
     
     def adapt_right_wrist_receiver(self, joint_pitch, joint_yaw):
         #  "Wrist_Pitch" joint
@@ -184,6 +194,8 @@ class AVPTeleopWrist():
                 franka_demand.append(starting_franka_pose[i] * trans_damp + trans_demand[i] * (1-trans_damp))
             else:
                 franka_demand.append(target_hand_orientation[i-3])
-        
-        return franka_demand, applied_pitch, applied_yaw,
+        if self.gp.button_data["L1"] == 1:
+            return franka_demand, applied_pitch, applied_yaw,
+        else:
+            return starting_franka_pose, self.current_pitch, self.current_yaw
     
