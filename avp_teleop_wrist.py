@@ -200,7 +200,7 @@ class AVPTeleopWrist():
                 franka_demand.append(starting_franka_pose[i] * trans_damp + trans_demand[i] * (1-trans_damp))
             else:
                 franka_demand.append(target_hand_orientation[i-3])
-        if self.gp.button_data["L1"] == 1:
+        if True:
             return franka_demand, applied_pitch, applied_yaw, hand_transform
         else:
             return starting_franka_pose, self.current_pitch, self.current_yaw, hand_transform

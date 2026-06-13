@@ -13,7 +13,7 @@ def main():
     
     adapt_hand = HandRegulator()
     # vision_pro = AVP(ip = "172.20.10.4")
-    vision_pro = AVP(ip = "192.168.0.100")
+    vision_pro = AVP(ip = "172.20.10.5")
 
     # change the ip address to 'adapt-rpi.local' when using a raspberry pi on USB gadget mode
     # if running on localhost use '127.0.0.1'
@@ -82,24 +82,24 @@ def main():
         """
 
         # time.sleep(0.1) # <--- this is just here to throttle how much gets printed on the terminal
-        time.sleep(0.01)
+        time.sleep(0.2)
 
-        print("wrist_pose ", vision_pro.wrist_pose)
+        # print("wrist_pose ", vision_pro.wrist_pose)
 
         
-        arm_pose = np.array([1,1,1, 1.0, 0, 0, 0])  # Dummy arm pose data
-        current_pitch = 0.0  # Dummy current pitch data
-        current_yaw = 0.0  # Dummy current
-        wrist_pose_demand = vision_pro.wrist_pose
+        # arm_pose = np.array([1,1,1, 1.0, 0, 0, 0])  # Dummy arm pose data
+        # current_pitch = 0.0  # Dummy current pitch data
+        # current_yaw = 0.0  # Dummy current
+        # wrist_pose_demand = vision_pro.wrist_pose
 
-        avp_teleopWrist.arm_pos_receiver(arm_pose)
-        avp_teleopWrist.adapt_right_wrist_receiver(current_pitch, current_yaw)
-        avp_teleopWrist.avp_demand_receiver(wrist_pose_demand)
+        # avp_teleopWrist.arm_pos_receiver(arm_pose)
+        # avp_teleopWrist.adapt_right_wrist_receiver(current_pitch, current_yaw)
+        # avp_teleopWrist.avp_demand_receiver(wrist_pose_demand)
 
-        arm_demand, hand_wrist_pitch, hand_wrist_yaw, hand_transform = avp_teleopWrist.get_arm_wrist_command()
+        # arm_demand, hand_wrist_pitch, hand_wrist_yaw, hand_transform = avp_teleopWrist.get_arm_wrist_command()
         
-        print("arm_demand ",arm_demand)  # robot arm target position and orientation
-        print("hand_wrist_pitch  hand_wrist_yaw ", hand_wrist_pitch, hand_wrist_yaw) # adapt hand joint demand for wrist motors
+        # print("arm_demand ",arm_demand)  # robot arm target position and orientation
+        # print("hand_wrist_pitch  hand_wrist_yaw ", hand_wrist_pitch, hand_wrist_yaw) # adapt hand joint demand for wrist motors
 
 
 if __name__ == "__main__":
